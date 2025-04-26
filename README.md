@@ -38,3 +38,27 @@ The tool requires:
 ## 📊 Calculation Method
 
 Using photometric formulas, the tool calculates:
+
+Number of lamps = (Room area × Target lux) / (Lamp lumens × CU × LLF)
+
+Where:
+- CU = Coefficient of Utilization
+- LLF = Light Loss Factor
+
+The experimental algorithm then suggests:
+- Minimum number of lamps required
+- Recommended spacing pattern
+- Expected lux distribution map
+
+---
+
+## 🚀 Quick Start
+
+```python
+python illuminance_calc.py \
+  --length 6.0 \
+  --width 4.5 \
+  --height 2.7 \
+  --lux 300 \
+  --lumens 1600 \
+  --beam_angle 120
