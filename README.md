@@ -51,14 +51,3 @@ The experimental algorithm then suggests:
 - Expected lux distribution map
 
 ---
-
-## 🚀 Quick Start
-
-```python
-python illuminance_calc.py \
-  --length 6.0 \
-  --width 4.5 \
-  --height 2.7 \
-  --lux 300 \
-  --lumens 1600 \
-  --beam_angle 120
